@@ -1,0 +1,11 @@
+form{
+    margin-top: 18%;
+    margin-bottom: -2px;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}

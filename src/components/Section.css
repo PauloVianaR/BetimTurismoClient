@@ -1,0 +1,88 @@
+  #fraseconsulta{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+  #dadosviagem{
+    text-align: center;
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;            
+  }
+  #btnConsultar{
+    color: black;
+    background-color: rgb(77, 74, 255);
+    font-weight: bolder;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 300px;
+  }
+  p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h3{
+    text-align: center;           
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-weight: lighter;
+  }
+  #dadoscontato{
+    background-color: rgba(0, 0, 0, 0.781);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #labl{
+    text-align: center;
+    box-align: center;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    box-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
+  }
+  #preenchimento{
+    text-align: left;
+    padding-left: 500px;
+    padding-top: -300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-block-end: 100px;
+    padding-block-start: -50%;
+    margin-top: -210px;
+  }
+  #areaMsgn{
+    text-align: center;
+    padding-right: -20px;
+    padding-block-start: 150 px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20%;
+  }
+.busca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  margin-top: 80px;
+  margin-bottom: -50px;
+}
