@@ -16,8 +16,8 @@ export default() => {
       <Router>
         <Switch>
           <Route path="/" exact component={Section} />
-          <Route path="/signup" exact component={Signup} />
-          <Route path="/login" exact component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
 
