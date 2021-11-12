@@ -9,7 +9,7 @@ export default () =>{
     const [senha, setSenha] = useState("");
 
     const submitCadastrar = () =>{
-        Axios.post("https://betim-turismo-backend.herokuapp.com/api/insert", {
+        Axios.post("https://localhost:3001/api/insert", {
             login: login,
             senha: senha,
             email: email
