@@ -14,7 +14,7 @@ export default () => {
 
     useEffect(() => {
         const loadAll = async() =>{
-            await Axios.get("http://localhost:3001/login").then((response) => {
+            await Axios.get("http://betimturismo-backend.herokuapp.com/login").then((response) => {
                 if (response.data.loggedIn == true) {
                     setUserSection(response.data.user[0].login);
                 }
@@ -29,7 +29,7 @@ export default () => {
        if(userSection === ""){
            window.alert("Necessário fazer o login para exibir as viagens!");
        } else {
-           await Axios.post("http://localhost:3001/api/getTravellsUser",{
+           await Axios.post("http://betimturismo-backend.herokuapp.com/api/getTravellsUser",{
                 userSection : userSection
                 }).then((response) => {
                 if(response.data.message){
@@ -47,7 +47,7 @@ export default () => {
         } else if(travelsList[index].status_viagem === "ENCERRADA"){
             window.alert("Esta viagem já está encerrada!");
         } else {
-            await Axios.post("http://localhost:3001/api/FinishTravel", {
+            await Axios.post("http://betimturismo-backend.herokuapp.com/api/FinishTravel", {
                 idlugarviagem : travelsList[index].idlugarviagem
             }).then((response) => {
                 if(response.data.message){

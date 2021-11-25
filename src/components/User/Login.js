@@ -14,7 +14,7 @@ export default () =>{
     Axios.defaults.withCredentials = true;
 
     const submitLogin = async() => {
-        await Axios.post("http://localhost:3001/api/getLogin", {
+        await Axios.post("http://betimturismo-backend.herokuapp.com/api/getLogin", {
             email: email,
             senha: senha,
         }).then((response) => {

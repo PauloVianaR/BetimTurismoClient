@@ -10,7 +10,7 @@ export default () =>{
 
     useEffect(() => {
         const loadAll = async() =>{
-            await Axios.get("http://localhost:3001/login").then((response) => {
+            await Axios.get("http://betimturismo-backend.herokuapp.com/login").then((response) => {
                 if (response.data.loggedIn == true) {
                     setUserSection(response.data.user[0].login);
                 }

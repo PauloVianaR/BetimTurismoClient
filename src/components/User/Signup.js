@@ -18,7 +18,7 @@ export default () =>{
         } else if(senha !== confirmSenha){
             window.alert("Falha na confirmação da senha: Senha deve ser igual a sua confirmação!")
         } else {
-            await Axios.post("http://localhost:3001/api/insertUser", {
+            await Axios.post("http://betimturismo-backend.herokuapp.com/api/insertUser", {
                 login: login,
                 senha: senha,
                 email: email,

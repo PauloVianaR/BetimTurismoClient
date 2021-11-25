@@ -21,7 +21,7 @@ export default () => {
 
     useEffect(() => {
         const loadAll = async() =>{
-            await Axios.get("http://localhost:3001/login").then((response) => {
+            await Axios.get("http://betimturismo-backend.herokuapp.com/login").then((response) => {
                 if (response.data.loggedIn == true) {
                     setUserSection(response.data.user[0].login);
                 }
@@ -105,7 +105,7 @@ export default () => {
         } else if(dataida == "" || datavolta == ""){
             window.alert("Selecione a data de Ida e a data de Volta da viagem")
         } else {
-            Axios.post("http://localhost:3001/api/insertTravel", {
+            Axios.post("http://betimturismo-backend.herokuapp.com/api/insertTravel", {
             cidadeida: cidadeida,
             cidadevolta: cidadevolta,
             dataida: dataida,

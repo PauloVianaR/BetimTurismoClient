@@ -9,7 +9,7 @@ export default () => {
     const history = useHistory();
 
     const simClick = async () => {
-        await Axios.get("http://localhost:3001/logoutCookie").then(() =>{
+        await Axios.get("http://betimturismo-backend.herokuapp.com/logoutCookie").then(() =>{
             window.alert("Sessão encerrada!")
         });
 
