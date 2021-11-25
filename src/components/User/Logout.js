@@ -8,8 +8,8 @@ export default () => {
     Axios.defaults.withCredentials = true;
     const history = useHistory();
 
-    const simClick = () => {
-        Axios.get("http://localhost:3001/logoutCookie").then(() =>{
+    const simClick = async () => {
+        await Axios.get("http://localhost:3001/logoutCookie").then(() =>{
             window.alert("Sessão encerrada!")
         });
 

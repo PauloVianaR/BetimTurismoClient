@@ -20,17 +20,22 @@ export default () => {
     Axios.defaults.withCredentials = true;
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/login").then((response) => {
-        if (response.data.loggedIn == true) {
-            setUserSection(response.data.user[0].login);
-        }
-        });
+        const loadAll = async() =>{
+            await Axios.get("http://localhost:3001/login").then((response) => {
+                if (response.data.loggedIn == true) {
+                    setUserSection(response.data.user[0].login);
+                }
+            });
 
-        sethoraIda("09:35");
-        sethoraVolta("23:55");
-        setCidadeIda("BELO HORIZONTE")
-        setCidadeVolta("PARIS")
-        setTempoViagem("14h20m")
+            sethoraIda("09:35");
+            sethoraVolta("23:55");
+            setCidadeIda("BELO HORIZONTE")
+            setCidadeVolta("PARIS")
+            setTempoViagem("14h20m")
+        }
+
+        loadAll();
+
     }, []);
     
     const escolheMes = (mes) =>{

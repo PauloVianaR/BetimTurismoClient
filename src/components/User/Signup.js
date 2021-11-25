@@ -12,13 +12,13 @@ export default () =>{
 
     const history = useHistory();
 
-    const submitCadastrar = () =>{
+    const submitCadastrar = async () =>{
         if(email === "" || login === "" || senha === ""){
             window.alert("Favor preenhcer todos os campos!")
         } else if(senha !== confirmSenha){
             window.alert("Falha na confirmação da senha: Senha deve ser igual a sua confirmação!")
         } else {
-            Axios.post("http://localhost:3001/api/insertUser", {
+            await Axios.post("http://localhost:3001/api/insertUser", {
                 login: login,
                 senha: senha,
                 email: email,

@@ -9,11 +9,16 @@ export default () =>{
     Axios.defaults.withCredentials = true;
 
     useEffect(() => {
-    Axios.get("http://localhost:3001/login").then((response) => {
-      if (response.data.loggedIn == true) {
-        setUserSection(response.data.user[0].login);
-      }
-    });
+        const loadAll = async() =>{
+            await Axios.get("http://localhost:3001/login").then((response) => {
+                if (response.data.loggedIn == true) {
+                    setUserSection(response.data.user[0].login);
+                }
+            });
+        }
+
+        loadAll();
+
     }, []);
 
     return (

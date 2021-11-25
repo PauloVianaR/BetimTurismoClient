@@ -18,19 +18,24 @@ export default () => {
     const [tempoviagem, setTempoViagem] = useState(""); 
 
     Axios.defaults.withCredentials = true;
-
+    
     useEffect(() => {
-        Axios.get("http://localhost:3001/login").then((response) => {
-        if (response.data.loggedIn == true) {
-            setUserSection(response.data.user[0].login);
-        }
-        });
+        const loadAll = async() =>{
+            await Axios.get("http://localhost:3001/login").then((response) => {
+                if (response.data.loggedIn == true) {
+                    setUserSection(response.data.user[0].login);
+                }
+            });
 
-        sethoraIda("04:10");
-        sethoraVolta("11:30");
-        setCidadeIda("BELO HORIZONTE")
-        setCidadeVolta("ORLANDO")
-        setTempoViagem("11h30m")
+            sethoraIda("04:10");
+            sethoraVolta("11:30");
+            setCidadeIda("BELO HORIZONTE")
+            setCidadeVolta("ORLANDO")
+            setTempoViagem("11h30m")
+        }
+
+        loadAll();
+
     }, []);
     
     const escolheMes = (mes) =>{
