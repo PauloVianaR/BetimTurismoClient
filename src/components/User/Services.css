@@ -1,0 +1,127 @@
+.title--service--pag{
+    margin-top: 5%;
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.opcoes--filtro{
+    margin: 2% 0 0 0;
+    display: grid;
+    justify-content: left;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.lists{
+    margin-top: -31%;
+    margin-left: 2%;
+}
+.btn--mostra--viagem,.btn--desmarca--viagem{
+    border-radius: 2cm;
+    padding: 10px 7px 10px 7px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.25s;
+}
+.btn--mostra--viagem{
+    margin: 25px 0 25px 0;
+    background-color: green;
+}
+.btn--mostra--viagem:hover{
+    cursor: pointer;
+    background-color: rgb(31, 221, 24);
+}
+.btn--desmarca--viagem{
+    margin: 65% 0 0 0;
+    background-color: rgba(165, 16, 16, 0.877)
+}
+.btn--desmarca--viagem:hover{
+    cursor: pointer;
+    background-color: rgba(255, 23, 23, 0.877)
+}
+
+.data--search{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px 0 15px 0;    
+}
+.viagens--lista, .viagens--lista--volta{
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+    margin: 0 17% 0 12.5%;
+    padding: 2% 0 0 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    border: solid;
+    border-color:rgba(0, 0, 0, 0.781);
+    
+}
+.viagens--lista--volta{
+    margin-bottom: 3%;
+}
+.dataIda,.dataCNF--ida,.dataSDU--ida{
+    display: grid;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.radio-ida1{
+    margin-top: 130px;
+}
+small{
+    margin-top: -13px;
+    font-size: 14px;
+}
+.city--name,.dia--mes{
+    font-weight: normal;
+}
+.hora--travel{
+    font-size: 26px;
+    margin-top: 130px;
+}
+.direto--nome{
+    display: flex;
+    color: green;
+}
+.direto--nome--encerr{
+    display: flex;
+    color: red;
+}
+.city--name{
+    margin-top: 16px;
+}
+.direto--label{
+    position:absolute;
+    margin-top: 120px;
+    text-decoration: underline;
+}
+.tempo--calculo{
+    position:absolute;
+    margin-top: 190px;
+    color: rgba(0, 0, 0, 0.781);;
+}
+.latam{
+    margin-right: -24px;
+}
+
+.info--travel--serv{
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: -32% 0 25% 0;
+    text-align: start;
+}
+.pay--value{
+    border-bottom: dashed;
+    margin-bottom: 50px;
+}

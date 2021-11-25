@@ -14,10 +14,15 @@
   }
   #btnConsultar{
     color: black;
-    background-color: rgb(77, 74, 255);
+    background-color: rgb(69, 67, 230);
     font-weight: bolder;
     font-size: 14px;
     padding-left: 5px;
+    transition: 0.3s;
+  }
+  #btnConsultar:hover{
+    cursor: pointer;
+    background-color: rgb(85, 82, 255);
   }
   h2{
     text-align: center;
@@ -71,18 +76,22 @@
   #areaMsgn{
     text-align: center;
     padding-right: -20px;
-    padding-block-start: 150 px;
+    padding-block-start: 150px;
     padding-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
     margin-left: 20%;
   }
-.busca{
-  display: flex;
+.busca--pginicial{
+  display:flex;
   justify-content: center;
   align-items: center;
   background-color: #FFF;
   margin-top: 80px;
   margin-bottom: -50px;
+  text-align: center;
+}
+.btn--busca--destino:hover{
+  cursor: pointer;
 }

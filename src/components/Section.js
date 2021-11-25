@@ -1,16 +1,58 @@
-import React from "react";
+import React, {useState} from "react";
 import './Section.css';
 import Slider from './Slider/Slider';
+import {useHistory} from 'react-router-dom';
 
 export default () => {
+
+    const history = useHistory();
+
+    const [destinoSearch,setdestinoSearch] = useState(".");
+
+    const pushTravel = () => {
+        
+        let destinoUp = destinoSearch.toUpperCase().trim();
+
+        switch (destinoUp) {
+            case "RIO DE JANEIRO":
+                history.push("travelSearchRio")
+            break;
+
+            case "CARIBE":
+                history.push("/travelSearchCaribe")
+            break;
+
+            case "MOSCOU":
+                history.push("/travelSearchMoscou")
+            break;
+
+            case "PARIS":
+                history.push("/travelSearchParis")
+            break;
+
+            case "ORLANDO":
+                history.push("/travelSearchOrlando")
+            break;
+        
+            default:
+                history.push("/erro")
+            break;
+        } 
+        
+    }
+
+    const consultTravel = () => {
+        history.push("/erro")
+    }
+
     return (
         <div className = "section2">
 
-            <div className="busca">
+            <div className="busca--pginicial">
                 <tr>
                     <td><label className="lblDestino">Procure agora seu destino:</label></td>
-                    <td><input type="text" placeholder="Destino"></input></td> 
-                    <td><input type="submit" value="Busca"></input></td>
+                    <td><input type="text" placeholder="Destino" onChange={(e) => {setdestinoSearch(e.target.value);}}></input></td> 
+                    <td><input type="submit" value="Busca" onClick={pushTravel} className="btn--busca--destino" ></input></td>
                 </tr>
             </div> 
             
@@ -26,7 +68,7 @@ export default () => {
                     <td> <input type="text" placeholder="Destino" id="inputDestino" /></td>
                     <td> <input type="text" placeholder="Data de Saída" id="inputDTSaida" /></td>
                     <td> <input type="text" placeholder="Data de Retorno" id="inputDTRetorno" /></td>
-                    <td> <input type="submit" value="Consultar" id="btnConsultar" /></td>
+                    <td> <input type="submit" value="Consultar" id="btnConsultar" onClick={consultTravel} /></td>
                 </tr>
             </div>
             <div id="infoContato">

@@ -1,0 +1,214 @@
+.pesquisaviagem{
+    display: grid;
+    margin-top: 50px;
+    padding: 80px 0 680px 10px;
+    border-right-style: solid;
+    border-right-color: rgba(0, 0, 0, 0.781);
+    margin-right: 85vw;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+}
+.busca{
+    display: grid;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.data--ida{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.data--volta{
+    padding-bottom: 30px;
+}
+.hotel-empresaaerea{
+    margin-top: 20px;
+}
+.quartos-pessoas{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.hotel{
+    margin-bottom: 20px;
+}
+.hotel-empresaaerea,.quartos-pessoas{
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.781);
+    padding-top: 30px;
+}
+
+
+.paymentarea{
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    margin: -68.5% 1% 5% 83%;
+    padding: 4% 0 40.85% 0;
+    border-left: solid;
+    border-color: rgba(0, 0, 0, 0.781);
+    overflow: hidden;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{    
+    font-weight: bold;
+    font-size: 18px;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+}
+.preco--adulto--reais{
+    margin-top: 20px;
+    font-size: 26px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.price--single,.taxas,.tipo--viagem{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taxa--info,.tipo--info{
+    font-size: 14px;
+    margin-left: -46px;
+}
+.preco--final{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-top:rgba(0, 0, 0, 0.781) solid;
+    padding: 9% 14% 0 14%;
+    margin: 18% 0 0 -40%;
+}
+.preco--final--valor{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.btn--select--price{
+    margin-top: 50px;
+    padding: 14px 0 14px 0;
+    border-radius: 1cm;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    background-color: green;
+    transition: 0.25s;
+
+}
+.btn--select--price:hover{
+    cursor: pointer;
+    background-color: rgb(31, 221, 24);
+}
+
+
+.seleciona--viagem--ida{
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+    margin: -66.2% 17% 450px 12.5%;
+    padding-left: -10%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    border-bottom: solid;
+    border-color:rgba(0, 0, 0, 0.781);
+    
+}
+.dataIda,.dataCNF--ida,.dataSDU--ida{
+    display: grid;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.radio-ida1{
+    margin-top: 130px;
+}
+small{
+    margin-top: -13px;
+    font-size: 14px;
+}
+.city--name,.dia--mes{
+    font-weight: normal;
+}
+.hora--travel{
+    font-size: 26px;
+    margin-top: 130px;
+}
+.direto--nome{
+    display: flex;
+    color: green;
+}
+.city--name{
+    margin-top: 16px;
+}
+.direto--label{
+    position:absolute;
+    margin-top: 120px;
+    margin-left: -20px;
+    text-decoration: underline;
+}
+.direto--label:hover{
+    cursor: pointer;
+}
+.tempo--calculo{
+    position:absolute;
+    margin-top: 190px;
+    margin-right: -60%;
+    color: rgba(0, 0, 0, 0.781);;
+}
+
+.seleciona--viagem--volta{
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+    margin: -370px 17% 150px 12.5%;
+    padding-left: -10%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    border-bottom: solid;
+    border-color:rgba(0, 0, 0, 0.781);
+    
+}
+.dataVolta,.dataCNF--volta,.dataSDU--volta,.data--ida--indireto,.data--volta--indireto{
+    display: grid;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.seleciona--viagem--ida--indireto{
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+    margin: -70px 17% 150px 12.5%;
+    padding-left: -10%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    border-bottom: solid;
+    border-color:rgba(0, 0, 0, 0.781);
+    
+}
+
+.seleciona--viagem--volta--indireto{
+    display: flex;
+    justify-content:space-around;
+    align-items:baseline;
+    margin: -70px 17% 20px 12.5%;
+    padding-left: -10%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    border-bottom: solid;
+    border-color:rgba(0, 0, 0, 0.781);
+    
+}
